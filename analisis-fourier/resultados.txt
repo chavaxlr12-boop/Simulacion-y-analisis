@@ -1,0 +1,33 @@
+RESULTADOS NUMÉRICOS - ANÁLISIS DE SEÑALES CON FOURIER
+========================================================
+
+[Pulso rectangular]
+  X(0) numérico: 0.2
+  X(0) teórico: 0.2
+  primer cero teórico [Hz]: 5
+  error relativo vs teoría: 0.00315982
+
+[Escalón unitario]
+  |X(0)| (área de la ventana): 0.9995
+  valor medio de x(t): 0.49975
+
+[Senoidal]
+  frecuencia del pico [Hz]: 50
+  altura del pico (teórica A/2): 0.5
+  fase en +f0 [rad] (teórica -π/2): -1.5708
+
+[Propiedades]  (error ~1e-16 = exacto a precisión de máquina)
+Propiedad                         | Error relativo / resultado
+----------------------------------|---------------------------
+Linealidad                        | 1.72e-16
+Desplazamiento (espectro complejo)| 6.18e-16
+Desplazamiento (|Y| vs |X|)       | 2.78e-16
+Escalamiento a = 0.5              | 2.37e-03
+Escalamiento a = 1.0              | 0.00e+00
+Escalamiento a = 2.0              | 4.92e-03
+Modulación (extra)                | 2.78e-04
+Parseval (extra)                  | E_t = 449.5000, E_f = 449.5000
+
+[Aplicaciones]
+  ECG: SNR antes = -3.8 dB -> después = 16.2 dB (mejora de 20.0 dB)
+  DTMF: número marcado = 7391, decodificado = 7391
